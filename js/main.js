@@ -45,6 +45,7 @@ document.getElementById("contactForm").addEventListener("submit", (e) => {
   const telefono = data.get("telefono");
   const localidad = data.get("localidad");
   const negocio = data.get("negocio") || "";
+  const mensaje = data.get("mensaje"); // <-- FALTABA ESTO
 
   const text =
 `Hola! Soy ${nombre}.
@@ -53,8 +54,8 @@ Localidad: ${localidad}
 Negocio: ${negocio}
 Mensaje: ${mensaje}`;
 
-  // IMPORTANTE: poné tu número en formato internacional sin + ni espacios
-  const TU_NUMERO = "549XXXXXXXXXX"; // <-- CAMBIAR
+  // IMPORTANTE: número en formato internacional, sin + ni espacios
+  const TU_NUMERO = "5493388501086"; // <-- TU NÚMERO REAL
   const url = `https://wa.me/${TU_NUMERO}?text=${encodeURIComponent(text)}`;
   window.open(url, "_blank", "noopener,noreferrer");
 });

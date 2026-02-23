@@ -597,3 +597,49 @@
     }
     .mini-item{ width: 100%; }
   }
+
+  /* ===== HEADER SOCIAL ICONS ===== */
+
+.topbar-cta {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 16px;
+  color: #111;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+.icon-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover con identidad de marca */
+
+.icon-btn:hover .fa-instagram {
+  color: #E4405F;
+}
+
+.icon-btn:hover .fa-whatsapp {
+  color: #25D366;
+}
+
+.icon-btn:hover .fa-facebook-f {
+  color: #1877F2;
+}
